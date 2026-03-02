@@ -6,6 +6,7 @@ import "./globals.css";
 import roboto from "@/src/mui/fonts/roboto";
 import primaryTheme from "@/src/mui/themes/primary";
 import NavigationBar from "@/src/components/NavigationBar";
+import Box from "@mui/material/Box";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,7 +35,9 @@ export default function RootLayout({
           <ThemeProvider theme={primaryTheme}>
             <AppRouterCacheProvider>
               <NavigationBar/>
-              {children}
+              <Box sx={{width:"100%", display:"flex", flexGrow:1}}>
+                {children}
+              </Box>
             </AppRouterCacheProvider>
         </ThemeProvider>
       </body>

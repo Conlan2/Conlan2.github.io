@@ -2,21 +2,25 @@
 import { createTheme, extendTheme } from '@mui/material/styles';
 
 const primaryTheme = createTheme({
-
+  cssVariables: true,
   typography: {
     fontFamily: 'var(--font-roboto)',
   },
   colorSchemes: {
     light: {
         palette: {
-          primary: { main: '#010101' },
-          background: { default: '#fff' },
+          primary: { main: '#fff' },
+          background: { default: '#fff',
+                        paper: '#EfEfEf'
+          },
         },
       },
     dark: {
         palette: {
-            primary: { main: '#fff' },
-            background: { default: '#010101' },
+            primary: { main: '#EEE' },
+            background: { default: '#010101',
+                          paper: '#060606'
+             },
         },
     },
   }
