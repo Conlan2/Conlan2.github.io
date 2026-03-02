@@ -5,6 +5,7 @@ import { ThemeProvider } from '@mui/material/styles'
 import "./globals.css";
 import roboto from "@/src/mui/fonts/roboto";
 import primaryTheme from "@/src/mui/themes/primary";
+import NavigationBar from "@/src/components/NavigationBar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <ThemeProvider theme={primaryTheme}>
             <AppRouterCacheProvider>
+              <NavigationBar/>
               {children}
             </AppRouterCacheProvider>
         </ThemeProvider>
