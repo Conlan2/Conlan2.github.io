@@ -2,23 +2,24 @@
 import Image from "next/image";
 import {Box, Button, Stack} from "@mui/material"
 import HamburgerSection from "@/src/components/HamburgerSection";
+import PersonalSection from "@/src/components/PersonalSection";
 
 export default function Home() {
   return (
-    <Stack flexGrow={1} sx={{width:"100%", display:"flex"}}>
-      <HamburgerSection sx={{bgcolor:"background.default"}} title=""> 
+    <Stack flexGrow={1} sx={{width:"100%", display:"flex", height:"100%"}}>
+      <HamburgerSection sx={{bgcolor:"background.default", flex:1.15}} title=""> 
+        <PersonalSection></PersonalSection>
+      </HamburgerSection> 
+      <HamburgerSection sx={{bgcolor:"background.paper", flex:1}} title="About Me"> 
       Test1
       </HamburgerSection> 
-      <HamburgerSection sx={{bgcolor:"background.paper"}} title="About Me"> 
-      Test1
-      </HamburgerSection> 
-      <HamburgerSection sx={{bgcolor:"background.default"}}  title="Skills and Expertise">
+      <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Skills and Expertise">
       Test2
       </HamburgerSection> 
-      <HamburgerSection sx={{bgcolor:"background.paper"}}  title="Projects">
+      <HamburgerSection sx={{bgcolor:"background.paper", flex:1}}  title="Projects">
       Test3
       </HamburgerSection> 
-      <HamburgerSection sx={{bgcolor:"background.default"}}  title="Contacts">
+      <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Contacts">
       Test4
       </HamburgerSection> 
     </Stack>

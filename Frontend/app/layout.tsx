@@ -35,7 +35,7 @@ export default function RootLayout({
           <ThemeProvider theme={primaryTheme}>
             <AppRouterCacheProvider>
               <NavigationBar/>
-              <Box sx={{width:"100%", display:"flex", flexGrow:1}}>
+              <Box sx={{width:"100%", height:"4000px", display:"flex", flexGrow:1}}>
                 {children}
               </Box>
             </AppRouterCacheProvider>

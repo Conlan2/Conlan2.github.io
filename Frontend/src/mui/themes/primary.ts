@@ -19,7 +19,7 @@ const primaryTheme = createTheme({
         palette: {
             primary: { main: '#EEE' },
             background: { default: '#010101',
-                          paper: '#060606'
+                          paper: '#060606',
              },
         },
     },
