@@ -1,12 +1,16 @@
 import { AppBar, Toolbar, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
+import primaryTheme from '../mui/themes/primary';
 
 
 export default function NavigationBar() {
     return (
 
-        <AppBar sx={{flexGrow: 1, position: 'sticky'}} elevation={3}>
+        <AppBar sx={{flexGrow: 1, 
+                position: 'sticky',
+                borderColor: "transparent",
+}} >
             <Toolbar>
                 <Typography variant='h6' sx={{ fontWeight: 'bold' }}>Conlan Myers's Portfolio</Typography>
                 <Box sx={{flexGrow: 1}}></Box>

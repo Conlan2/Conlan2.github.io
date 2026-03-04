@@ -5,6 +5,7 @@ import HamburgerSection from "@/src/components/HamburgerSection";
 import PersonalSection from "@/src/components/PersonalSection";
 import AboutMeSection from "@/src/components/AboutMeSection";
 import SkillsAndExpertise from "@/src/components/SkillsAndExpertise";
+import FeaturedProjectsSection from "@/src/components/FeaturedProjectsSection";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
         <SkillsAndExpertise></SkillsAndExpertise>
       </HamburgerSection> 
       <HamburgerSection sx={{bgcolor:"background.paper", flex:1}}  title="Projects">
-      Test3
+      <FeaturedProjectsSection></FeaturedProjectsSection>
       </HamburgerSection> 
       <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Contacts">
       Test4
