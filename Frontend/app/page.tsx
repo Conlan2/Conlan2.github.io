@@ -6,6 +6,7 @@ import PersonalSection from "@/src/components/PersonalSection";
 import AboutMeSection from "@/src/components/AboutMeSection";
 import SkillsAndExpertise from "@/src/components/SkillsAndExpertise";
 import FeaturedProjectsSection from "@/src/components/FeaturedProjectsSection";
+import ContactsSection from "@/src/components/ContactsSection";
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
       <FeaturedProjectsSection></FeaturedProjectsSection>
       </HamburgerSection> 
       <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Contacts">
-      Test4
+      <ContactsSection></ContactsSection>
       </HamburgerSection> 
     </Stack>
   );
