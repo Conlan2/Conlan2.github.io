@@ -3,6 +3,7 @@ import Image from "next/image";
 import {Box, Button, Stack} from "@mui/material"
 import HamburgerSection from "@/src/components/HamburgerSection";
 import PersonalSection from "@/src/components/PersonalSection";
+import AboutMeSection from "@/src/components/AboutMeSection";
 
 export default function Home() {
   return (
@@ -11,7 +12,7 @@ export default function Home() {
         <PersonalSection></PersonalSection>
       </HamburgerSection> 
       <HamburgerSection sx={{bgcolor:"background.paper", flex:1}} title="About Me"> 
-      Test1
+        <AboutMeSection></AboutMeSection>
       </HamburgerSection> 
       <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Skills and Expertise">
       Test2

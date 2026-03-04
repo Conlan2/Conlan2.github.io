@@ -20,7 +20,7 @@ export default function PersonalSection() {
                 p:2
             }}>
                 <Box sx={{
-                    flexGrow: 1,
+                    flex: 1,
                     borderRadius: 8,
                     aspectRatio: '9/14',
                     overflow: 'hidden',
