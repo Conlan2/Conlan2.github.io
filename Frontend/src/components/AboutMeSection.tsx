@@ -15,7 +15,6 @@ export default function AboutMeSection() {
                     display:"flex", 
                     justifyContent:"flex-end",
                     alignItems: "center",
-                    backgroundColor: "background.default",
                     m:1,
                     p:2
                 }}>
@@ -23,7 +22,7 @@ export default function AboutMeSection() {
                         sx = {{
                             maxWidth: '600px',
                         }}>
-                        <Typography >
+                        <Typography variant="subtitle1">
                             Bla BlaBlaBlaBlaBl
                             aBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla 
                             <br/><br/>
@@ -53,7 +52,6 @@ export default function AboutMeSection() {
                                         width: "80%",
                                         maxHeight: '1000px',
                                         position: "relative",
-                                        backgroundColor: "background.default",
 
                                     }}>
                                         <Image

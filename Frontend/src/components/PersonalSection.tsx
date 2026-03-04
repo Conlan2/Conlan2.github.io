@@ -51,7 +51,7 @@ export default function PersonalSection() {
                 <Typography variant="h2" sx={{color:"secondary.main"}}>
                     Software Engineer
                 </Typography>
-                <Typography sx={{maxWidth: "70%"}}>
+                <Typography variant="subtitle1" sx={{maxWidth: "70%"}}>
                     Temp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp Temp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTempTemp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTempTemp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp Info
                 </Typography>
                 <Stack direction="row">
