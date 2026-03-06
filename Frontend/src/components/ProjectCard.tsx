@@ -1,5 +1,6 @@
-import { Box, Typography } from "@mui/material";
+import { alpha, Box, Typography } from "@mui/material";
 import Image from 'next/image';
+import primaryTheme from "../mui/themes/primary";
 
 interface ProjectCardProps {
     title: String,
@@ -11,12 +12,19 @@ export default function ProjectCard({title, skills, imageSrc}: ProjectCardProps)
     return (
         <Box sx={{
             flex: 1,
+            ml: 2,
             mr: 2,
             mb: 4,
+            mt: 4,
             borderRadius: 8,
             minWidth: "400px",
             maxWidth: "600px",
             backgroundColor: "background.default",
+            boxShadow: `0px 3px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.7)}`,
+            transition: "box-shadow 0.1s ease-in-out",
+            ":hover": {
+                boxShadow: `0px 3px 20px 5px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+            }
             }}>
                 
                 <Box

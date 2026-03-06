@@ -1,10 +1,11 @@
-import { Box, Button, Icon, Input, TextField, Typography } from "@mui/material";
+import { alpha, Box, Button, Icon, Input, TextField, Typography } from "@mui/material";
 import Image from 'next/image';
 import Form from 'next/form'
 import EmailIcon from '@mui/icons-material/Email';
 import { ReactNode } from "react";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
+import primaryTheme from "../mui/themes/primary";
 interface contactInfoProps {
     type: String
     detail: String
@@ -17,6 +18,7 @@ function ContactInfo({type, detail, children}: contactInfoProps){
             mt: 1,
             p: 1,
             display: "flex",
+           
         }}>
             <Box
                 sx={{
@@ -30,7 +32,13 @@ function ContactInfo({type, detail, children}: contactInfoProps){
                     overflow: 'hidden',
                     maxWidth: '80px',
                     maxHeight: '9900px',
-                    position: "relative"
+                    position: "relative",
+                    boxShadow: `0px 3px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.5)}`,
+                    transition: "box-shadow 0.1s ease-in-out",
+                    ":hover": {
+                        boxShadow: `0px 3px 20px 5px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+                    }
+                        
                 }}
             >
                 <Box sx={{
@@ -118,7 +126,7 @@ export default function ContactsSection() {
                             width: "100%",
                             backgroundColor: "background.paper",
                             mb: 2,
-                            borderRadius: 8
+                   
                         }}></TextField >
                         <Typography variant="subtitle2">Email</Typography>
                         <TextField sx={{

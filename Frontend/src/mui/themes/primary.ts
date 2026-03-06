@@ -7,33 +7,40 @@ declare module '@mui/material/styles' {
 }
   interface PaletteOptions {
       gradient?: string;
+      
+  }
+  interface ColorSchemes {
+    shadowChannel: String
   }
 }
-const primaryTheme = createTheme({
-  cssVariables: true,
+const primaryTheme = extendTheme({
   typography: {
     fontFamily: 'var(--font-roboto)',
   },
   colorSchemes: {
     light: {
         palette: {
-          primary: { main: '#fff' },
+          primary: { main: '#fff', },
+          secondary: {main: '#65bbe6'},
           background: { default: '#fff',
                         paper: '#EfEfEf'
                         
           },
-          gradient: 'linear-gradient(to bottom, var(--mui-palette-background-paper), var(--mui-palette-background-default))',
-
+          gradient: 'linear-gradient(to bottom, var(--mui-palette-background-paper), var(--mui-palette-background-default))',  
         },
+        
+        
       },
     dark: {
         palette: {
             primary: { main: '#EEE' },
+            secondary: {main: '#65bbe6'},
             background: { default: '#010101',
                           paper: '#060606',
              },
             gradient: 'linear-gradient(to bottom, var(--mui-palette-background-paper), var(--mui-palette-background-default))',
         },
+        
     },
   }
 
