@@ -7,6 +7,7 @@ import AboutMeSection from "@/src/components/AboutMeSection";
 import SkillsAndExpertise from "@/src/components/SkillsAndExpertise";
 import FeaturedProjectsSection from "@/src/components/FeaturedProjectsSection";
 import ContactsSection from "@/src/components/ContactsSection";
+import Footer from "@/src/components/Footer";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
       <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Contacts">
       <ContactsSection></ContactsSection>
       </HamburgerSection> 
+      <Footer></Footer>
     </Stack>
   );
 }

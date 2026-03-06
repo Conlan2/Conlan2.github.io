@@ -1,40 +1,48 @@
-import { Box, Button, Input, TextField, Typography } from "@mui/material";
+import { Box, Button, Icon, Input, TextField, Typography } from "@mui/material";
 import Image from 'next/image';
 import Form from 'next/form'
-
+import EmailIcon from '@mui/icons-material/Email';
+import { ReactNode } from "react";
+import SmartphoneIcon from '@mui/icons-material/Smartphone';
+import LocationOnIcon from '@mui/icons-material/LocationOn';
 interface contactInfoProps {
     type: String
     detail: String
+    children: ReactNode 
 }
-function ContactInfo({type, detail}: contactInfoProps){
+function ContactInfo({type, detail, children}: contactInfoProps){
     return (
         <Box sx={{
-            width: "40%",
+            width: "300px",
             mt: 1,
             p: 1,
             display: "flex",
-            backgroundColor: "background.paper",
-            borderRadius: 4
         }}>
             <Box
                 sx={{
                     flex: 0.3,
                     mr: 2,
-                    borderRadius: 2,
-                 
+                    borderRadius: 4,
+                    p: 1,
+                    backgroundColor: "background.paper",
+
                     aspectRatio: '1/1',
                     overflow: 'hidden',
-                    maxWidth: '50px',
+                    maxWidth: '80px',
                     maxHeight: '9900px',
                     position: "relative"
                 }}
             >
-                <Image
-                    src="/vercel.svg"
-                    alt="Description"  
-                    fill           
-                    style={{ objectFit: 'cover' }} 
-                />
+                <Box sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                    width: "100%",
+                    height: "100%"
+                }}>
+                {children}
+                </Box>
+                
             </Box>
             <Box sx={{
                 flex: 1,
@@ -53,31 +61,41 @@ export default function ContactsSection() {
         <Box sx={{ 
             display:"flex", 
             justifyContent:"space-around", 
+            alignItems: "center",
             align:"center",
-            width:"90%",
+            width:"70%",
             height: "100%"
             }}>
                 <Box sx={{ //Left Box
                     flex:1, 
                     display:"flex", 
                     justifyContent:"flex-end",
+                    minWidth: "500px",
                     m:1,
                     p:2
                 }}>
                     <Box
                         sx = {{
-                            maxWidth: '600px',
+                            maxWidth: '800px',
                         }}>
                         <Typography variant="h3">
                             Contact Info
                         </Typography>
                         <Typography variant="subtitle1">
-                            Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp Temp 
+                            If you are an employer looking for a innovative, inqusitive, and diligent employee, please reach out with the details below.
                         </Typography>
 
-                        <ContactInfo type="Test" detail="Test"></ContactInfo>
-                        <ContactInfo type="Test" detail="Test"></ContactInfo>
-                        <ContactInfo type="Test" detail="Test"></ContactInfo>
+                        <ContactInfo type="Email" detail="conlan2222@gmail.com">
+                            <EmailIcon sx={{width:"90%", height:"90%"}}>
+                            </EmailIcon>
+                        </ContactInfo>
+                        <ContactInfo type="Phone" detail="587-591-1257">
+                            <SmartphoneIcon sx={{width:"90%", height:"90%"}}>      
+                            </SmartphoneIcon>
+                        </ContactInfo>
+                        <ContactInfo type="Location" detail="Edmonton, AB, Canada">
+                            <LocationOnIcon sx={{width:"90%", height:"90%"}}></LocationOnIcon>
+                        </ContactInfo>
 
 
 
@@ -88,26 +106,30 @@ export default function ContactsSection() {
                     flex:1, 
                     display:"flex", 
                     flexDirection:"column",
-                    width: "50%",
+
+
                     m:1,
-                    p:2}}>
+                    p:2,
+                    pl: 12}}>
                 
                     <Form action="/contact">
-                        <Typography variant="h6">Name</Typography>
+                        <Typography variant="subtitle2">Name</Typography>
                         <TextField  sx={{
-                            width: "70%",
+                            width: "100%",
                             backgroundColor: "background.paper",
+                            mb: 2,
                             borderRadius: 8
                         }}></TextField >
-                        <Typography variant="h6">Email</Typography>
+                        <Typography variant="subtitle2">Email</Typography>
                         <TextField sx={{
-                            width: "70%",
+                            width: "100%",
                             backgroundColor: "background.paper",
+                            mb: 2
 
                         }}></TextField >
-                        <Typography variant="h6">Message</Typography>
+                        <Typography variant="subtitle2">Message</Typography>
                         <TextField sx={{
-                            width: "70%",
+                            width: "100%",
                             backgroundColor: "background.paper",
                             
                         }}

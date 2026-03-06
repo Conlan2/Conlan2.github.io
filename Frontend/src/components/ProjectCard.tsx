@@ -10,14 +10,13 @@ interface ProjectCardProps {
 export default function ProjectCard({title, skills, imageSrc}: ProjectCardProps) {
     return (
         <Box sx={{
+            flex: 1,
             mr: 2,
             mb: 4,
             borderRadius: 8,
             minWidth: "400px",
             maxWidth: "600px",
-            width: "30%",
             backgroundColor: "background.default",
-       
             }}>
                 
                 <Box
