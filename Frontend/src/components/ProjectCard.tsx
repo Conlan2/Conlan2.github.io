@@ -4,21 +4,22 @@ import primaryTheme from "../mui/themes/primary";
 
 interface ProjectCardProps {
     title: String,
-    skills: String,
+    desc: String,
+    skills: Array<String>,
     imageSrc: string,
   }
 
-export default function ProjectCard({title, skills, imageSrc}: ProjectCardProps) {
+export default function ProjectCard({title, desc, skills, imageSrc}: ProjectCardProps) {
     return (
         <Box sx={{
-            flex: 1,
+            flex: "1 0 100%;",
             ml: 2,
             mr: 2,
             mb: 4,
             mt: 4,
             borderRadius: 8,
-            minWidth: "400px",
-            maxWidth: "600px",
+            minWidth: "300px",
+            maxWidth: "400px",
             backgroundColor: "background.default",
             boxShadow: `0px 3px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.7)}`,
             transition: "box-shadow 0.1s ease-in-out",
@@ -52,8 +53,23 @@ export default function ProjectCard({title, skills, imageSrc}: ProjectCardProps)
                 mt: 1
 
             }}>
-            <Typography variant="h4" flexGrow={1}>{title}</Typography>
-            <Typography variant="subtitle1" sx={{mt: 3}}>{skills}</Typography>
+                <Typography variant="h4" flexGrow={1}>{title}</Typography>
+                <Typography variant="subtitle1" sx={{mt: 3}}>{desc}</Typography>
+                <Box sx={{display:"flex"}}>
+                    {skills.map((skill, index) => (
+                        <Box sx={{
+                            backgroundColor: primaryTheme.palette.secondary.main,
+                            borderRadius: 8,
+                            p: 0.5,
+                            pl: 2,
+                            pr: 2,
+                            mr: 2,
+                            boxShadow: `0px 0px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+                            }}>
+                            <Typography variant="subtitle1" sx={{color:"black"}}>{skill}</Typography>
+                        </Box>
+                    ))}
+                </Box>
             </Box>
             
        </Box>

@@ -150,7 +150,12 @@ export default function ContactsSection() {
                             pb: 1,
                             pl: 4,
                             pr: 4,
-                            backgroundColor: "background.paper"
+                            backgroundColor: "background.paper",
+                            boxShadow: `0px 0px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.5)}`,
+                            transition: "box-shadow 0.1s ease-in-out",
+                            ":hover": {
+                                boxShadow: `0px 0px 20px 5px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+                            }
                         }}>Submit</Button> 
                         </Box>
                         

@@ -14,6 +14,15 @@ declare module '@mui/material/styles' {
   }
 }
 const primaryTheme = extendTheme({
+  components: {
+    MuiCssBaseline: {
+      styleOverrides: {
+        html: {
+          scrollBehavior: 'smooth',
+        },
+      },
+    },
+  },
   typography: {
     fontFamily: 'var(--font-roboto)',
   },
@@ -42,6 +51,7 @@ const primaryTheme = extendTheme({
         },
         
     },
+    
   }
 
 });

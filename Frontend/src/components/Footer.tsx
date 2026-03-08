@@ -22,11 +22,11 @@ export default function Footer() {
                     justifyContent: "center",
                     alignItems: "center"
                 }}>
-                    <Stack sx={{
+                    <Box sx={{
                         display:"flex",
                         width: "100%",
                         justifyContent: "center",
-                        alignItems: "center"
+                        alignItems: "center",
                     }}>
                         <GitHubIcon sx={{
                             width:"40px",
@@ -36,7 +36,7 @@ export default function Footer() {
                             width:"40px",
                             height:"40px"
                         }}/>
-                    </Stack>
+                    </Box>
                     <Typography>© Conlan Myers. All rights reserved.</Typography>
 
                 </Stack>

@@ -1,9 +1,11 @@
-import { Button, Stack, Typography } from "@mui/material";
+import { alpha, Button, Stack, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Image from 'next/image';
+import primaryTheme from "../mui/themes/primary";
 
 
 export default function PersonalSection() {
+
     return (
         <Box sx={{ 
         display:"flex", 
@@ -26,7 +28,10 @@ export default function PersonalSection() {
                     overflow: 'hidden',
                     maxWidth: '600px',
                     maxHeight: '9900px',
-                    position: "relative"
+                    position: "relative",
+                    boxShadow: `0px 3px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.5)}`,
+                    transition: "box-shadow 0.1s ease-in-out",
+                   
                 }}>
                     <Image
                         src="/vercel.svg"

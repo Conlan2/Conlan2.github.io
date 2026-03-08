@@ -29,13 +29,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.variable}>
+    <html lang="en" className={roboto.variable} >
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <ThemeProvider theme={primaryTheme}>
             <AppRouterCacheProvider>
               <NavigationBar/>
-              <Box sx={{width:"100%", height:"4000px", display:"flex", flexGrow:1}}>
+              <Box sx={{width:"100%", display:"flex", flexGrow:1}}>
                 {children}
               </Box>
             </AppRouterCacheProvider>
