@@ -30,7 +30,9 @@ const primaryTheme = extendTheme({
     light: {
         palette: {
           primary: { main: '#fff', },
-          secondary: {main: '#65bbe6'},
+          secondary: {main: '#65bbe6',
+                      dark: '#65bbe6'
+          },
           background: { default: '#fff',
                         paper: '#EfEfEf'
                         
@@ -42,8 +44,12 @@ const primaryTheme = extendTheme({
       },
     dark: {
         palette: {
-            primary: { main: '#EEE' },
-            secondary: {main: '#65bbe6'},
+            primary: { main: '#EEE',
+              dark: "#e0ddddff"
+             },
+            secondary: {main: '#65bbe6',
+                        dark: '#3678dbff'
+            },
             background: { default: '#010101',
                           paper: '#060606',
              },

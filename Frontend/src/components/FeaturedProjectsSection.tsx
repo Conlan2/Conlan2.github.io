@@ -14,9 +14,17 @@ export default function FeaturedProjectsSection() {
             width:"70%",
             height: "100%"
             }}>
-                <ProjectCard title="Expert Profiles" desc="Crossreferenced and organized academic works for thousands of professors for the University of Alberta. " skills={new Array("test1", "test2")} imageSrc="/vercel.svg"/>
-                <ProjectCard title="Fitness Application" desc="Application for seniors to track fitness health, including full google account integration with OAuth-2 security.  " skills={Array()}  imageSrc="/vercel.svg"/>
-                <ProjectCard title="Personal Website" desc="Made my personal site to display my achivments. In Progress." skills={Array()}  imageSrc="/vercel.svg" />
+                <ProjectCard title="Expert Profiles" 
+                desc="Crossreferenced and organized academic works for thousands of professors for the University of Alberta. As well, performed LGA analysis on the data. " 
+                skills={new Array("Python", "Django", "Django REST Api", "Scikit-Learn", "mySQL", "Docker")} 
+                imageSrc="/vercel.svg"/>
+                <ProjectCard title="Fitness Application" 
+                desc="Application for seniors to track fitness health, including full google account integration with OAuth-2 security.  " 
+                skills={Array("Javascript", "Typescript", "Next.js", "Next-Auth", "OAuth-2", "Express.js", "Node.js", "Docker", "PostgeSQL")}  
+                imageSrc="/vercel.svg"/>
+                <ProjectCard title="NCL Compititions" desc="Performed in Multiple Cybersecurity Compitions in the National Cyber League, Achiving high score in the top 1% of participants both individually and in teams." 
+                skills={Array("Python", "Javascript", "Cybersecurity", "Log Analysis", "Cryptography", "Digital Forensics", "Network Analysis")}  
+                imageSrc="/vercel.svg" />
                
             </Box>
     )

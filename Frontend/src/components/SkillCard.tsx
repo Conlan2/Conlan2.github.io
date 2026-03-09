@@ -1,14 +1,17 @@
 import { alpha, Box, Typography } from "@mui/material";
 import Image from 'next/image';
 import primaryTheme from "../mui/themes/primary";
+import { ReactNode, useState } from "react";
 
 interface SkillCardProps {
     title: String,
     skillText: String,
-    iconSrc: string,
+    icon: ReactNode,
   }
 
-export default function SkillCard({title, skillText, iconSrc}: SkillCardProps) {
+export default function SkillCard({title, skillText, icon}: SkillCardProps) {
+    const [clicked, setClicked] = useState()
+    
     return (
         <Box sx={{
             p: 3, 
@@ -34,16 +37,25 @@ export default function SkillCard({title, skillText, iconSrc}: SkillCardProps) {
                     aspectRatio: '1/1',
                     overflow: 'hidden',
                     maxWidth: '50px',
-                    maxHeight: '9900px',
-                    position: "relative"
+                    maxHeight: '50px',
+                    position: "relative",
+                    backgroundColor: "secondary.dark",
+                    boxShadow: `0px 0px 3px 3px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+
+            
                 }}
             >
-                <Image
-                    src={iconSrc}
-                    alt="Description"  
-                    fill           
-                    style={{ objectFit: 'cover' }} 
-                />
+                <Box  sx={{
+                    justifyContent: "center",
+                    alignItems: "center",
+                    display: "flex",
+                    width: "100%",
+                    height: "100%",
+                    
+                }}>
+                    {icon}
+                </Box>
+                
             </Box>
 
             <Typography variant="h4" flexGrow={1}>{title}</Typography>

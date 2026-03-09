@@ -54,19 +54,20 @@ export default function ProjectCard({title, desc, skills, imageSrc}: ProjectCard
 
             }}>
                 <Typography variant="h4" flexGrow={1}>{title}</Typography>
-                <Typography variant="subtitle1" sx={{mt: 3}}>{desc}</Typography>
-                <Box sx={{display:"flex"}}>
+                <Typography variant="subtitle1" sx={{mt: 1, color:"dark"}}>{desc}</Typography>
+                <Box sx={{mt: 2, display:"flex", width:"100%", flexWrap:"wrap", justifyContent:"space-around"}}>
                     {skills.map((skill, index) => (
-                        <Box sx={{
-                            backgroundColor: primaryTheme.palette.secondary.main,
+                        <Box key={index} sx={{
+                            backgroundColor: 'secondary.dark',
                             borderRadius: 8,
                             p: 0.5,
                             pl: 2,
                             pr: 2,
                             mr: 2,
-                            boxShadow: `0px 0px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+                            mb: 2,
+                            boxShadow: `0px 0px 3px 3px ${alpha(primaryTheme.palette.secondary.main, 1)}`
                             }}>
-                            <Typography variant="subtitle1" sx={{color:"black"}}>{skill}</Typography>
+                            <Typography variant="subtitle1">{skill}</Typography>
                         </Box>
                     ))}
                 </Box>

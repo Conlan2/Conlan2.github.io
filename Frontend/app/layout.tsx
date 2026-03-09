@@ -29,7 +29,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={roboto.variable} >
+    <html lang="en" className={roboto.variable} style={{scrollBehavior:'smooth'}}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           <ThemeProvider theme={primaryTheme}>
