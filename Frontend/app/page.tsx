@@ -14,29 +14,29 @@ import primaryTheme from "@/src/mui/themes/primary";
 export default function Home() {
   return (
     <Stack flexGrow={1} sx={{width:"100%", display:"flex", height:"100%"}}>
+      <div id="PersonalSection"></div>
       <HamburgerSection sx={{
         bgcolor:"background.default",
          flex:1.15,
          
         }} title=""
          > 
-        <div id="PersonalSection"></div>
         <PersonalSection></PersonalSection>
       </HamburgerSection> 
+      <div id="AboutMeSection"></div>
       <HamburgerSection sx={{bgcolor:"background.paper", flex:1}} title="About Me"> 
-        <div id="AboutMeSection"></div>
         <AboutMeSection></AboutMeSection>
       </HamburgerSection> 
+      <div id="SkillsAndExpertise"></div>
       <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Skills and Expertise">
-        <div id="SkillsAndExpertise"></div>
         <SkillsAndExpertise></SkillsAndExpertise>
       </HamburgerSection> 
+      <div id="FeaturedProjectsSection"></div>
       <HamburgerSection sx={{bgcolor:"background.paper", flex:1}}  title="Projects">
-        <div id="FeaturedProjectsSection"></div>
         <FeaturedProjectsSection></FeaturedProjectsSection>
       </HamburgerSection> 
+      <div id="ContactsSection"></div>
       <HamburgerSection sx={{bgcolor:"background.default", flex:1}}  title="Contacts">
-        <div id="ContactsSection"></div>
         <ContactsSection></ContactsSection>
       </HamburgerSection> 
       <Footer></Footer>

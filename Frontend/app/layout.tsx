@@ -19,7 +19,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Conlan Myers Website",
+  title: "Conlan Myers' Website",
   description: "",
 };
 
