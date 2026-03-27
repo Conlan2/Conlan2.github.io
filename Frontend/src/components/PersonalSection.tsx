@@ -57,7 +57,7 @@ export default function PersonalSection() {
                     Software Engineer
                 </Typography>
                 <Typography variant="subtitle1" sx={{maxWidth: "70%"}}>
-                    Temp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp Temp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTempTemp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTempTemp Info Temp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp InfoTemp Info
+                    My name is Conlan Myers and I am a Software Engneer with a focus on backend development. 
                 </Typography>
                 <Stack direction="row">
                     <Button>Get In Touch</Button>
