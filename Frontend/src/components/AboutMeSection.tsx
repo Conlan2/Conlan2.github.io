@@ -23,8 +23,7 @@ export default function AboutMeSection() {
                             maxWidth: '600px',
                         }}>
                         <Typography variant="subtitle1">
-                            Bla BlaBlaBlaBlaBl
-                            aBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla  Bla BlaBlaBlaBlaBlaBlaBlaBlaBlaBlaBla 
+                            I am have always been interested in everything computers since a very young age. I even have a dimple on my cheek I got from when I fell off my dad's office chair when I was five. 
                             <br/><br/>
 
                             Bla BlaBlaBlaBlaBl
