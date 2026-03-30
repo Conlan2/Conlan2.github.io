@@ -56,8 +56,8 @@ export default function PersonalSection() {
                 <Typography variant="h2" sx={{color:"secondary.main"}}>
                     Software Engineer
                 </Typography>
-                <Typography variant="subtitle1" sx={{maxWidth: "70%"}}>
-                    My name is Conlan Myers and I am a Software Engneer with a focus on backend development. 
+                <Typography variant="h5" sx={{maxWidth: "70%"}}>
+                    With boundless ethusiasm toward modern technology and development I will diligently improve my skills and abilities. I am a valuable asset to any team, project, or organization.
                 </Typography>
                 <Stack direction="row">
                     <Button>Get In Touch</Button>
