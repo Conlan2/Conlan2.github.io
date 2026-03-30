@@ -2,6 +2,7 @@ import { alpha, Button, Stack, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Image from 'next/image';
 import primaryTheme from "../mui/themes/primary";
+import Link from "next/link";
 
 
 export default function PersonalSection() {
@@ -59,9 +60,17 @@ export default function PersonalSection() {
                 <Typography variant="h5" sx={{maxWidth: "70%"}}>
                     With boundless ethusiasm toward modern technology and development I will diligently improve my skills and abilities. I am a valuable asset to any team, project, or organization.
                 </Typography>
-                <Stack direction="row">
-                    <Button>Get In Touch</Button>
-                    <Button>View Projects</Button>
+                <Stack direction="row" sx={{mt: 2}}>
+                    <Button sx={{m: 1}}>
+                        <Link href='#ContactsSection'>
+                            Get In Touch
+                        </Link>
+                    </Button>
+                    <Button sx={{m: 1}}>
+                        <Link href='#FeaturedProjectsSection'>
+                            View Projects
+                        </Link>
+                    </Button>
                 </Stack>
             </Box>
         </Box>
