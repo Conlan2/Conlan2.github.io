@@ -58,15 +58,27 @@ export default function PersonalSection() {
                     Software Engineer
                 </Typography>
                 <Typography variant="h5" sx={{maxWidth: "70%"}}>
-                    With boundless ethusiasm toward modern technology and development I will diligently improve my skills and abilities. I am a valuable asset to any team, project, or organization.
+                    With boundless ethusiasim toward modern technology and development I will diligently improve my skills and abilities. I am a valuable asset to any team, project, or organization.
                 </Typography>
                 <Stack direction="row" sx={{mt: 2}}>
-                    <Button sx={{m: 1}}>
+                    <Button sx={{m: 1, p: 1,
+                            boxShadow: `0px 0px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.5)}`,
+                            transition: "box-shadow 0.1s ease-in-out",
+                            ":hover": {
+                                boxShadow: `0px 0px 20px 5px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+                            }
+                    }}>
                         <Link href='#ContactsSection'>
                             Get In Touch
                         </Link>
                     </Button>
-                    <Button sx={{m: 1}}>
+                    <Button sx={{m: 1, p: 1,
+                            boxShadow: `0px 0px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.5)}`,
+                            transition: "box-shadow 0.1s ease-in-out",
+                            ":hover": {
+                                boxShadow: `0px 0px 20px 5px ${alpha(primaryTheme.palette.secondary.main, 1)}`
+                            }
+                    }}>
                         <Link href='#FeaturedProjectsSection'>
                             View Projects
                         </Link>
