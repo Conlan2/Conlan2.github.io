@@ -8,7 +8,6 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import primaryTheme from "../mui/themes/primary";
 import Snackbar from '@mui/material/Snackbar';
 
-
 interface contactInfoProps {
     type: String
     detail: String
@@ -92,6 +91,9 @@ function ContactInfo({type, detail, clipBoard, children}: contactInfoProps){
 
 
 export default function ContactsSection() {
+
+
+
     return (
         <Box sx={{ 
             display:"flex", 
@@ -147,27 +149,33 @@ export default function ContactsSection() {
                     p:2,
                     pl: 12}}>
                 
-                    <Form action="/contact">
+                    <Form action="https://submit-form.com/Kgqy1fgdA"
+                        formMethod="POST"
+                    data-botpoison-public-key="pk_93bcb855-a614-42ae-a129-87e2bed1227b"
+                    >
                         <Typography variant="subtitle2">Name</Typography>
                         <TextField  sx={{
                             width: "100%",
                             backgroundColor: "background.paper",
                             mb: 2,
                    
-                        }}></TextField >
-                        <Typography variant="subtitle2">Email</Typography>
+                        }}
+                        name="Name"></TextField >
+                        <Typography variant="subtitle2">Your Email</Typography>
                         <TextField sx={{
                             width: "100%",
                             backgroundColor: "background.paper",
                             mb: 2
 
-                        }}></TextField >
+                        }} 
+                        name="Email"></TextField >
                         <Typography variant="subtitle2">Message</Typography>
                         <TextField sx={{
                             width: "100%",
                             backgroundColor: "background.paper",
                             
-                        }}
+                        }} 
+                        name="Content"
                         multiline 
                         rows={6}></TextField >
                         <Box>
@@ -183,7 +191,8 @@ export default function ContactsSection() {
                             ":hover": {
                                 boxShadow: `0px 0px 20px 5px ${alpha(primaryTheme.palette.secondary.main, 1)}`
                             }
-                        }}>Submit</Button> 
+                        }}
+                        type="submit">Submit</Button> 
                         </Box>
                         
                     </Form>

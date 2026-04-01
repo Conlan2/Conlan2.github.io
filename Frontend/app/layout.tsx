@@ -7,6 +7,7 @@ import roboto from "@/src/mui/fonts/roboto";
 import primaryTheme from "@/src/mui/themes/primary";
 import NavigationBar from "@/src/components/NavigationBar";
 import Box from "@mui/material/Box";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,10 @@ export default function RootLayout({
     <html lang="en" className={roboto.variable} style={{scrollBehavior:'smooth'}}>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+          <Script 
+          src="https://unpkg.com/@botpoison/browser" 
+          strategy="afterInteractive" 
+          />
           <ThemeProvider theme={primaryTheme}>
             <AppRouterCacheProvider>
               <NavigationBar/>
