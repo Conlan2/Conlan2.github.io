@@ -11,6 +11,7 @@ export default function NavigationBar() {
 
         <AppBar sx={{flexGrow: 1, 
                 position: 'sticky',
+                
             }} >
    
             <Toolbar >

@@ -3,7 +3,8 @@ import Box from "@mui/material/Box";
 import Image from 'next/image';
 import primaryTheme from "../mui/themes/primary";
 import Link from "next/link";
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function PersonalSection() {
 
@@ -60,7 +61,27 @@ export default function PersonalSection() {
                 <Typography variant="h5" sx={{maxWidth: "70%"}}>
                     With boundless ethusiasim toward modern technology and development I will diligently improve my skills and abilities. I am a valuable asset to any team, project, or organization.
                 </Typography>
-                <Stack direction="row" sx={{mt: 2}}>
+                <Stack direction="row">
+                    <Box sx={{
+              
+                    display: "flex",
+                    width: "100%",
+                    height: "100%"
+                    }}>
+                        <Link href="https://www.linkedin.com/in/conlan-myers-18b140266/">
+                            <Button>
+                                <LinkedInIcon sx={{width:"40px", height: "100%"}}></LinkedInIcon>
+                            </Button>
+                        </Link>
+                        <Link href="https://github.com/Conlan2">
+                            <Button>
+                                <GitHubIcon sx={{width:"40px", height: "100%"}}></GitHubIcon>
+                            </Button>
+                        </Link>
+                    </Box>
+ 
+                </Stack>
+                <Stack direction="row" >
                     <Button sx={{m: 1, p: 1,
                             boxShadow: `0px 0px 10px 3px ${alpha(primaryTheme.palette.secondary.main, 0.5)}`,
                             transition: "box-shadow 0.1s ease-in-out",
