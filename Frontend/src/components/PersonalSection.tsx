@@ -35,7 +35,7 @@ export default function PersonalSection() {
                    
                 }}>
                     <Image
-                        src="/vercel.svg"
+                        src="/top_photo.jpg"
                         alt="Description"  
                         fill           
                         style={{ objectFit: 'cover' }} 

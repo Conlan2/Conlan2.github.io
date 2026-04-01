@@ -2,16 +2,32 @@ import { alpha, Box, Button, Icon, Input, TextField, Typography } from "@mui/mat
 import Image from 'next/image';
 import Form from 'next/form'
 import EmailIcon from '@mui/icons-material/Email';
-import { ReactNode } from "react";
+import { ReactNode, useState } from "react";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import primaryTheme from "../mui/themes/primary";
+import Snackbar from '@mui/material/Snackbar';
+
+
 interface contactInfoProps {
     type: String
     detail: String
+    clipBoard: string
     children: ReactNode 
 }
-function ContactInfo({type, detail, children}: contactInfoProps){
+function ContactInfo({type, detail, clipBoard, children}: contactInfoProps){
+    var [notificationState, setNotificationState] = useState(false)
+
+
+    function clipboardAdd(){
+        setNotificationState(true)
+    }
+
+    function closeNotification(){
+        setNotificationState(false)
+    }
+
+
     return (
         <Box sx={{
             width: "300px",
@@ -20,7 +36,7 @@ function ContactInfo({type, detail, children}: contactInfoProps){
             display: "flex",
            
         }}>
-            <Box
+            <Button
                 sx={{
                     flex: 0.3,
                     mr: 2,
@@ -40,6 +56,7 @@ function ContactInfo({type, detail, children}: contactInfoProps){
                     }
                         
                 }}
+                onClick={clipboardAdd}
             >
                 <Box sx={{
                     justifyContent: "center",
@@ -51,7 +68,7 @@ function ContactInfo({type, detail, children}: contactInfoProps){
                 {children}
                 </Box>
                 
-            </Box>
+            </Button>
             <Box sx={{
                 flex: 1,
                 
@@ -59,6 +76,16 @@ function ContactInfo({type, detail, children}: contactInfoProps){
                 <Typography variant="h6">{type}</Typography>
                 <Typography>{detail}</Typography>
             </Box>
+            <Snackbar
+            message={`Set ${clipBoard} to clipboard.`}
+            open={notificationState}
+            anchorOrigin={{"horizontal": "center", "vertical": "bottom"}}
+            autoHideDuration={5000}
+            onClose={closeNotification}
+
+>           
+                    
+            </Snackbar>
         </Box>
     )
 }
@@ -93,15 +120,15 @@ export default function ContactsSection() {
                             If you are an employer looking for a innovative, inqusitive, and diligent employee, please reach out with the details below.
                         </Typography>
 
-                        <ContactInfo type="Email" detail="conlan2222@gmail.com">
+                        <ContactInfo type="Email" detail="conlan2222@gmail.com" clipBoard="conlan2222@gmail.com">
                             <EmailIcon sx={{width:"90%", height:"90%"}}>
                             </EmailIcon>
                         </ContactInfo>
-                        <ContactInfo type="Phone" detail="587-591-1257">
+                        <ContactInfo type="Phone" detail="587-591-1257" clipBoard="587-591-1257">
                             <SmartphoneIcon sx={{width:"90%", height:"90%"}}>      
                             </SmartphoneIcon>
                         </ContactInfo>
-                        <ContactInfo type="Location" detail="Edmonton, AB, Canada">
+                        <ContactInfo type="Location" detail="Edmonton, AB, Canada" clipBoard="Edmonton, Ab, Canada">
                             <LocationOnIcon sx={{width:"90%", height:"90%"}}></LocationOnIcon>
                         </ContactInfo>
 
