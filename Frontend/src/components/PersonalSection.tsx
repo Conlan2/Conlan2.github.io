@@ -59,7 +59,7 @@ export default function PersonalSection() {
                     Software Engineer
                 </Typography>
                 <Typography variant="h5" sx={{maxWidth: "70%"}}>
-                    With boundless ethusiasim toward modern technology and development I will diligently improve my skills and abilities. I am a valuable asset to any team, project, or organization.
+                    With boundless ethusiasim toward modern technology and development I diligently improve my abilities. I am a valuable asset to any team, project, or organization.
                 </Typography>
                 <Stack direction="row">
                     <Box sx={{
