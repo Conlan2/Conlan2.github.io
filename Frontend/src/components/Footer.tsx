@@ -22,7 +22,7 @@ export default function Footer() {
                     justifyContent: "center",
                     alignItems: "center"
                 }}>
-                    <Box sx={{
+                    {/* <Box sx={{
                         display:"flex",
                         width: "100%",
                         justifyContent: "center",
@@ -36,7 +36,7 @@ export default function Footer() {
                             width:"40px",
                             height:"40px"
                         }}/>
-                    </Box>
+                    </Box> */}
                     <Typography>© Conlan Myers. All rights reserved.</Typography>
 
                 </Stack>
