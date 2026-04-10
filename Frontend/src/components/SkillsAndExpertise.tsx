@@ -8,14 +8,14 @@ import SmartToyIcon from '@mui/icons-material/SmartToy';
 import StorageIcon from '@mui/icons-material/Storage';
 import CloudIcon from '@mui/icons-material/Cloud';
 import PersonIcon from '@mui/icons-material/Person';
-
+import DataThresholdingIcon from '@mui/icons-material/DataThresholding';
 export default function SkillsAndExpertise() {
     return (
         <Box sx={{ 
             display:"flex", 
             justifyContent:"flex-start", 
             flexWrap: "wrap",
-            width:"70%",
+            width:"75%",
             height: "100%"
             }}>
                 <SkillCard title="Frontend Development" skillText="Html, Css, Javascript, Typescript, React, Next.js, Jetpack Compose" icon={
@@ -27,14 +27,14 @@ export default function SkillsAndExpertise() {
                 <SkillCard title="Database Technologies" skillText="SQL, mySQL, Microsoft SQL Server, PostgreSQL, MongoDB" icon={
                     <StorageIcon></StorageIcon>
                 }/>
-                <SkillCard title="AI and Data Analysis" skillText="Tensorflow, Scikit-Learn, R, Data-Mining, Data Analyitics" icon={
-                    <SmartToyIcon></SmartToyIcon>
+                <SkillCard title="Data Analysis" skillText="R, Data-Mining, Data Analyitics, Cluster Analysis, K-means, PCA Analysis" icon={
+                    <DataThresholdingIcon></DataThresholdingIcon>
                 }/>
                
-                <SkillCard title="Cloud Technologies" skillText="Temp" icon={
-                    <CloudIcon></CloudIcon>
+                <SkillCard title="AI and Machine Learning" skillText="Tensorflow, Scikit-Learn, Claude Code, Gemni" icon={
+                    <SmartToyIcon></SmartToyIcon>
                 }/>
-                <SkillCard title="Other Skills" skillText="OOP, Agile, CI/CD" icon={
+                <SkillCard title="Other Skills" skillText="OOP, Agile, CI/CD, Automated Testing, " icon={
                     <PersonIcon></PersonIcon>
                 }/>
 
