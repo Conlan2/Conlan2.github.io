@@ -1,7 +1,9 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: "export",
+  reactStrictMode: true,
+  basePath: "/conlan2.github.io",
 };
 
 export default nextConfig;
