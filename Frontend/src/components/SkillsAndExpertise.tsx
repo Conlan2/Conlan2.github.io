@@ -31,10 +31,10 @@ export default function SkillsAndExpertise() {
                     <DataThresholdingIcon></DataThresholdingIcon>
                 }/>
                
-                <SkillCard title="AI and Machine Learning" skillText="Tensorflow, Scikit-Learn, Claude Code, Gemni" icon={
+                <SkillCard title="AI and Machine Learning" skillText="Tensorflow, Scikit-Learn, Claude Code, Gemini" icon={
                     <SmartToyIcon></SmartToyIcon>
                 }/>
-                <SkillCard title="Other Skills" skillText="OOP, Agile, CI/CD, Automated Testing, " icon={
+                <SkillCard title="Other Skills" skillText="OOP, Agile, CI/CD, Automated Testing" icon={
                     <PersonIcon></PersonIcon>
                 }/>
 
