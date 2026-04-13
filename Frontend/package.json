@@ -9,9 +9,19 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@botpoison/browser": "^0.1.30",
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
+    "@fontsource/roboto": "^5.2.10",
+    "@mui/icons-material": "^7.3.9",
+    "@mui/material": "^7.3.8",
+    "@mui/material-nextjs": "^7.3.8",
+    "ajax": "^0.0.4",
     "next": "16.1.6",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "toast": "^0.5.4"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
