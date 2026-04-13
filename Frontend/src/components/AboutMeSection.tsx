@@ -26,9 +26,9 @@ export default function AboutMeSection() {
                         <Typography variant="subtitle1">
                             I have always been interested in everything about computers since a very young age. I even have a dimple that I got when I fell off my father's computer chair. Since I first studied programming all the way back in junior high I have dedicated myself to the Field of Computer Science.
                             <br/><br/>
-                            My prefered programming subject matter is on backend and/or more technical systems, I enjoy working on complex systems that allow me to innovate which I find fulfilling. Whether it's working on a backend web program, a database application, or a management system I always find fulfilment in making a well designed system.                        
+                            My preferred programming subject matter is on backend and/or more technical systems, I enjoy working on complex systems that allow me to innovate which I find fulfilling. Whether it's working on a backend web program, a database application, or a management system I always find fulfillment in making a well designed system.                        
                             <br/><br/>
-                            Much of my free time is spent on a variety of personal projects, programming practice, or other intrests. I understand a large variety of programming languages such as Kotlin, Go, Python, C, and more. I particiapte in game jams to improve my skills and teamwork, as well as create mods for existing games. I also am an avid cycler, this picture is of me cycling in the Setonaikai National Park in Japan.
+                            Much of my free time is spent on a variety of personal projects, programming practice, or other interests. I understand a large variety of programming languages such as Kotlin, Go, Python, C, and more. I participate in game jams to improve my skills and teamwork, as well as create mods for existing games. I also am an avid cycler, this picture is of me cycling in the Setonaikai National Park in Japan.
                             </Typography>
                     </Box>
                     </Box>

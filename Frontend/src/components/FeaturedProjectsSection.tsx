@@ -20,9 +20,9 @@ export default function FeaturedProjectsSection() {
                 imageSrc="/uofa2.png"/>
                 <ProjectCard title="Fitness Application" 
                 desc="Application for seniors to track fitness health, including full google account integration with OAuth-2 security.  " 
-                skills={Array("Javascript", "Typescript", "Next.js", "Next-Auth", "OAuth-2", "Express.js", "Node.js", "Docker", "PostgeSQL")}  
+                skills={Array("Javascript", "Typescript", "Next.js", "Next-Auth", "OAuth-2", "Express.js", "Node.js", "Docker", "PostgreSQL")}  
                 imageSrc="/Vtrek2.png"/>
-                <ProjectCard title="NCL Compititions" desc="Performed in Multiple Cybersecurity Compitions in the National Cyber League, Achiving high score in the top 1% of participants both individually and in teams." 
+                <ProjectCard title="NCL Compititions" desc="Performed in Multiple Cybersecurity Competitions in the National Cyber League, Achieving a high score in the top 1% of participants." 
                 skills={Array("Python", "Javascript", "Cybersecurity", "Log Analysis", "Cryptography", "Digital Forensics", "Network Analysis")}  
                 imageSrc="/NCLpic.png" />
                

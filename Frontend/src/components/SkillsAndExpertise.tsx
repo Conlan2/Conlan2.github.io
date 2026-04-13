@@ -27,7 +27,7 @@ export default function SkillsAndExpertise() {
                 <SkillCard title="Database Technologies" skillText="SQL, mySQL, Microsoft SQL Server, PostgreSQL, MongoDB" icon={
                     <StorageIcon></StorageIcon>
                 }/>
-                <SkillCard title="Data Analysis" skillText="R, Data-Mining, Data Analyitics, Cluster Analysis, K-means, PCA Analysis" icon={
+                <SkillCard title="Data Analysis" skillText="R, Data-Mining, Data Analytics, Cluster Analysis, K-means, PCA Analysis" icon={
                     <DataThresholdingIcon></DataThresholdingIcon>
                 }/>
                
