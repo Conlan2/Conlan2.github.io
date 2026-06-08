@@ -1,6 +1,6 @@
 import { alpha, Box, Typography } from "@mui/material";
 import Image from 'next/image';
-import primaryTheme from "../mui/themes/primary";
+import primaryTheme from "../../mui/themes/primary";
 import { ReactNode, useState } from "react";
 
 interface SkillCardProps {

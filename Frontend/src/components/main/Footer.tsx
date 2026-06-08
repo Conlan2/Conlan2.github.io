@@ -1,7 +1,6 @@
 import { AppBar, Stack, Toolbar, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import primaryTheme from '../mui/themes/primary';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function Footer() {

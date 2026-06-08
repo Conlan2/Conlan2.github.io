@@ -5,7 +5,7 @@ import { ThemeProvider } from '@mui/material/styles'
 import "./globals.css";
 import roboto from "@/src/mui/fonts/roboto";
 import primaryTheme from "@/src/mui/themes/primary";
-import NavigationBar from "@/src/components/NavigationBar";
+import NavigationBar from "@/src/components/main/NavigationBar";
 import Box from "@mui/material/Box";
 import Script from "next/script";
 

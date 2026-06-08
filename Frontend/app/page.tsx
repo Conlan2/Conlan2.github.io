@@ -1,13 +1,13 @@
 'use client';
 import Image from "next/image";
 import {Box, Button, Stack} from "@mui/material"
-import HamburgerSection from "@/src/components/HamburgerSection";
-import PersonalSection from "@/src/components/PersonalSection";
-import AboutMeSection from "@/src/components/AboutMeSection";
-import SkillsAndExpertise from "@/src/components/SkillsAndExpertise";
-import FeaturedProjectsSection from "@/src/components/FeaturedProjectsSection";
-import ContactsSection from "@/src/components/ContactsSection";
-import Footer from "@/src/components/Footer";
+import HamburgerSection from "@/src/components/main/HamburgerSection";
+import PersonalSection from "@/src/components/main/PersonalSection";
+import AboutMeSection from "@/src/components/main/AboutMeSection";
+import SkillsAndExpertise from "@/src/components/main/SkillsAndExpertise";
+import FeaturedProjectsSection from "@/src/components/main/FeaturedProjectsSection";
+import ContactsSection from "@/src/components/main/ContactsSection";
+import Footer from "@/src/components/main/Footer";
 import { alpha } from "@mui/material/styles";
 import primaryTheme from "@/src/mui/themes/primary";
 

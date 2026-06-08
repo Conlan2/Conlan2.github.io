@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import { ReactNode, useState } from "react";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import primaryTheme from "../mui/themes/primary";
+import primaryTheme from "../../mui/themes/primary";
 import Snackbar from '@mui/material/Snackbar';
 
 interface contactInfoProps {
