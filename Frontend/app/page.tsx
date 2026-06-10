@@ -7,7 +7,7 @@ import AboutMeSection from "@/src/components/main/AboutMeSection";
 import SkillsAndExpertise from "@/src/components/main/SkillsAndExpertise";
 import FeaturedProjectsSection from "@/src/components/main/FeaturedProjectsSection";
 import ContactsSection from "@/src/components/main/ContactsSection";
-import Footer from "@/src/components/main/Footer";
+import Footer from "@/src/components/layout/Footer";
 import { alpha } from "@mui/material/styles";
 import primaryTheme from "@/src/mui/themes/primary";
 
