@@ -1,12 +1,12 @@
-import { alpha, Box, SxProps, Typography } from "@mui/material";
+import { alpha, Box, SxProps, Theme, Typography } from "@mui/material";
 import Image from 'next/image';
-import primaryTheme from "../../mui/themes/primary";
 import { ReactNode } from "react";
+
 
 interface blogEntryProps {
     title: String
     text: string
-    sx?: SxProps
+    sx?: SxProps<Theme>
     children?: ReactNode; 
     
 }
@@ -16,13 +16,15 @@ export function BlogEntryAllText({title, text, sx, children}: blogEntryProps) {
         <Box sx={{ 
             p: 2, 
             flexGrow: 1, 
+            mb: 4,
             display:"flex", 
             flexDirection:"column", 
             justifyContent:"center", 
             alignItems:"center",
             width:"100%",
             height: "100%",
-            ...sx
+            bgcolor:"background.paper",
+
             }}>
                 <Typography sx={{
                     fontSize:32,
