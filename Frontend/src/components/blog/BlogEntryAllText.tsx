@@ -16,15 +16,15 @@ export function BlogEntryAllText({title, text, sx, children}: blogEntryProps) {
         <Box sx={{ 
             p: 2, 
             flexGrow: 1, 
-            mb: 4,
+            pb: 4,
             display:"flex", 
             flexDirection:"column", 
             justifyContent:"center", 
             alignItems:"center",
             width:"100%",
             height: "100%",
-            bgcolor:"background.paper",
-
+    
+            ...sx
             }}>
                 <Typography sx={{
                     fontSize:32,

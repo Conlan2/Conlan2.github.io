@@ -21,7 +21,7 @@ export default function blog() {
       text={"As a Person, I do not in general do social media. I don't post as I didn't see the need for clout or whatever other people seek from those sites; however, I have become increasingly convinced that I need some form of way to demonstraight how I am learning and improving better than a resume, so this blog is my answer."}>
       <Typography sx={{
         mt: 2, 
-        width: "50%"
+        width: "50%",
       }}>
         Up to the Summer of 2026 my posts will be refering to past events as I remember them happening. After that, I will attempt to update monthly. In general I will focus on what I learned that I found personally interesting.
       </Typography>
@@ -31,14 +31,14 @@ export default function blog() {
       sx={{
         bgcolor:"background.paper",
       }}
-      title={"Fall 2022"} 
-      text={"As a Person, I do not in general do social media. I don't post as I didn't see the need for clout or whatever other people seek from those sites; however, I have become increasingly convinced that I need some form of way to demonstraight how I am learning and improving better than a resume, so this blog is my answer."}>
+      title={"2020-2022"} 
+      text={"I am concentrating the first two years of University into a single entry as most of the content from these two years was entry level to computer science. While not usless in the slightest, every Computer Scientist worth their salt should know almost everything taught here by heart. I will just stick to talking about specfic exceptions."}>
       <Typography sx={{
         mt: 2, 
         width: "50%",
         
       }}>
-        Up to the Summer of 2026 my posts will be refering to past events as I remember them happening. After that, I will attempt to update monthly. In general I will focus on what I learned that I found personally interesting.
+        t
       </Typography>
       </BlogEntryAllText>
 
