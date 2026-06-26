@@ -40,7 +40,7 @@ export default function NavigationBar() {
                         
                     </Button>
                     <Button>
-                        <Link href='/blog'>
+                        <Link href='/Blog'>
                         Blog
                         </Link>
                         

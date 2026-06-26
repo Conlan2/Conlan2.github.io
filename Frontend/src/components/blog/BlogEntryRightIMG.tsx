@@ -1,4 +1,4 @@
-import { alpha, Box, SxProps, Theme, Typography } from "@mui/material";
+import { alpha, Box, Stack, SxProps, Theme, Typography } from "@mui/material";
 import Image from 'next/image';
 import { ReactNode } from "react";
 
@@ -27,6 +27,7 @@ export function BlogEntryAllText({title, text, sx, children}: blogEntryProps) {
     
             ...sx
             }}>
+                
                 <Typography sx={{
                     fontSize:48,
                     width: "40%",
@@ -34,6 +35,10 @@ export function BlogEntryAllText({title, text, sx, children}: blogEntryProps) {
                     mb: 4
                 }}>{title}
                 </Typography>
+                <Stack
+                direction="row">
+                    
+                </Stack>
                 <Typography sx={{
                     fontSize:19,
                     width: "50%",

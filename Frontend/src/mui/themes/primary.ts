@@ -51,7 +51,7 @@ const primaryTheme = extendTheme({
                         dark: '#3678dbff'
             },
             background: { default: '#010101',
-                          paper: '#202020ff',
+                          paper: '#101015ff',
              },
             gradient: 'linear-gradient(to bottom, var(--mui-palette-background-paper), var(--mui-palette-background-default))',
         },
