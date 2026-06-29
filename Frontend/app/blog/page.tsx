@@ -128,7 +128,7 @@ export default function blog() {
             alt="Multithreading Attempt One, Visualized"
             fill/>
           </Box>
-          <Typography sx={{width: "100%", textAlign: "center"}}>Multithreading Attempt One, Visualized</Typography>
+          <Typography sx={{width: "100%", textAlign: "center"}}>First Attempt at Multithreading, Visualized</Typography>
         </Stack>
         <Typography sx={{
          
@@ -166,21 +166,94 @@ export default function blog() {
     
 
       <BlogEntryAllText 
-      title={"Fall 2023"} 
-      text={"Cybersec Into, Data 1"}
+      title={"Summer 2023"} 
+      text={"The Summer of 2023 was when I had my first foray into Cybersecurity. When I first start Compsci I \
+        actually wanted to strongly avoid doing Cybersecurity. Not because I didn't believe it was interesting, \
+        it just wasn't my cup of tea, at least to my entry level knowledge. I only took it because there was a schedule conflict that blocked \
+        my preferred course."}
       >
       <Typography sx={{
         mt: 2, 
         width: "50%",
+        fontSize: 19
         
       }}>
-        
+        However, it turned out that Cybersecurity was, in fact, my cup of tea. I can't help but thank my Professor for the course
+        BLANK BLANK, who was very passionate about the topic, on top of being a bit... "Eccentric". There was a time where everyone
+        chose the exact same project template that he provided and threatened to kill himself because of that. This course was just the 
+        introduction to the topic, and focused mostly on terminology and the basics so we could understand future courses, so I can't write too
+        much about it, but it was good.
+        <br></br><br></br>
+        The other course of note from the summer (and the only other course of the summer) was Networking (The physical kind, not the
+        make friends to make references which I didn't do so I can't find a job despite getting solid 4.0 for my last year of just computer 
+        science and could only get one year of programming work at the UofA via a professor. Yeah, the other kind of networking. Thank you for my 
+        Ted Talk). 
+        <br></br><br></br>
       </Typography>
+          
+      <Stack 
+      direction="row"
+      sx={{
+        width: "50%",
+        gap: "16px",
+        mt: 2
+      }}>
+        <Typography sx={{
+         
+          
+          width: "60%",
+          fontSize: 19
+        }}>
+          In any case, this was the class that taught me the intricacies of network 
+          protocols, as well as packet structure. This would be soon very beneficial for my Network 
+          Security Course the following semester. The project for this course was 
+          a simple email server, the kind that used to be used all over internal networks 
+          before the days the gmail. 
+          <br></br><br></br>
+          The real meat of this project was that A: the packets had to be created and sent 
+          manually, and B: the data had to be encrypted with a handshake. This means that we 
+          had to split the data into the correctly size chunks, encrypt them (we used asymmetrical 
+          encryption for this), and then decrypt them at the destination. I personally enjoy this 
+          type of low-level work, I would have done more level programming work at the university if 
+          it didn't conflict with my schedule.   
+          <br></br><br></br>   
+           
+        </Typography>
+            
+        <Stack sx={{
+          width: "40%",
+          justifyContent: "center",
+          gap: "8px"
+        }}>
+          <Box sx={{
+                 
+                    borderRadius: 8,
+                    width: "100%",
+                    justifyContent: "center",
+                    aspectRatio: '9/12',
+                    overflow: 'hidden',
+                    maxWidth: '400px',
+                    maxHeight: '9900px',
+                    position: "relative",
+                    boxShadow: `0px 0px 10px 2px ${alpha(primaryTheme.palette.secondary.main, 0.5)}`,
+                   
+                   
+                }}>
+            <Image 
+            src="/Blog/pyrite.jpg" 
+            alt="A cool image of pyrite"
+            fill/>
+          </Box>
+          <Typography sx={{width: "100%", textAlign: "center"}}>Oooooh Shiny Cube (Pyrite)</Typography>
+        </Stack>
+      </Stack>
+
       </BlogEntryAllText>
 
       <BlogEntryAllText 
-      title={"Winter 2024"} 
-      text={"Cybersec Network, OOP, Datamining"}
+      title={"Fall 2023"} 
+      text={"This was possibly my favorite semester of University. Every single course was a computer science course \
+        I enjoyed."}
       sx={{
         bgcolor:"background.paper",
       }}>
@@ -194,7 +267,7 @@ export default function blog() {
       </BlogEntryAllText>
 
       <BlogEntryAllText 
-      title={"Fall 2024"} 
+      title={"Winter 2024"} 
       text={"Cybersec Local, Capstone"}
       sx={{
         
