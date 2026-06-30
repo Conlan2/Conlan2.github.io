@@ -253,22 +253,64 @@ export default function blog() {
       <BlogEntryAllText 
       title={"Fall 2023"} 
       text={"This was possibly my favorite semester of University. Every single course was a computer science course \
-        I enjoyed."}
+        I enjoyed. The course load was lighter than than previous semesters, given I had done two courses in the \
+        spring summer term. The courses were: Operating Systems, Computer Network Security, and Datamining and Advanced Databases. \
+        I cannot say what I found the most interesting as all of them varied wildly, it would be like comparing your favorite \
+        ice cream to your favorite pizza. (Unless your favorite pizza is an ice cream pizza I guess...). \
+        "}
       sx={{
         bgcolor:"background.paper",
       }}>
       <Typography sx={{
         mt: 2, 
         width: "50%",
-        
+        fontSize: 19
       }}>
-        
+        Operating System's was all about explaining exactly how operating systems functioned, as well as the differences between 
+        versions and types (Monolithic vs Micro vs Hybrid). Many people, including programmers treat the OS as effectively just a 
+        magic black box, that does things. Especially for low level applications, knowing how to work with the operating system is key.
+        <br></br><br></br>
+        The Project for the course was one of the best that I worked on for the entirety of University. We had to recreate the command line
+        for a Linux Machine. This meant that it had to have the following features: 1. Be Capable of Running built in commands from /bin, 
+        such as ls, mv, etc. 2. The program had to be able to use pipes (take the output from one program and send it to another). 3. 
+        The most difficult, the command line had to be Regex capable. 4. The program had to be able to run commands in the foreground or background
+        with &.
+        <br></br><br></br>
+        This project was the multithreading redemption from the earlier multithreaded monster of a project from the previous years.
+        What helped me the most was simply the fact that this course taught how multithreading actually works, and how different operating
+        systems handle thread locking, mutex, etc. (Wow! Actually knowing how something works allows you to make it better, perhaps
+        vibe coders should have a bit of a think about their slop? Nah! They don't know how!)        
+        <br></br><br></br>
+        Computer Network Security was my first higher level security course. My favorite part was that this course was real. What 
+        do I mean by that? The project for the course was not some fake simulation like "Image working for company A, and you are auditing...".
+        No, as part of the project we performed an actual audit on a actual company. The company for our project, each group got their own,
+        was called Profile Tree, a website builder from Ireland. I want to say more about it, but we had to sign NDAs because this was 
+        actual Security Work on a real company so thats not an option for this blog.
+        <br></br><br></br>
+        We also joined a Cybersecurity Competition called the NCL, National Cyber League. This is a North American Competition including 
+        several Universities and Schools, including some for the US military. We participated in two total competitions, for this and the 
+        next semester and each semester had two parts, a individual and team competition. In every single Competition, I can say with
+        full confidence that I did great. In three of the competitions, both individual and one team, I was in the top 1% of individuals. 
+        For the Spring 2024 competition, I was 48 out of 7406. Only 47 people, including cybersecurity professionals, did better than me.
+        It is one my proudest achievements. I even got medals for it.
+        <br></br><br></br>
+        Datamining and Advanced Databases was another great course all about how not just to manage large databases, but how to get useful 
+        information from Big Data. Our Professor (Mohammad El Hadj, by way, was one of my favorite Professors) made sure to define the difference
+        between information and data, data was just the actual content that you had, information was the useful details that you could pull
+        from it. This course and the following introduction to machine learning were very related in what we were doing, the focus was on what was expected.
+        This course was all about how we can get good data, while the machine learning course, which I will soon get to, was all about the techiques
+        themselves.
+       
       </Typography>
+
       </BlogEntryAllText>
 
       <BlogEntryAllText 
       title={"Winter 2024"} 
-      text={"Cybersec Local, Capstone"}
+      text={"My final semester, which also was overwhelming. Due to scheduling issues, which MacEwan due its smaller size had a lot of. \
+        I had four courses and one capstone project. One Course was Computer Vision, a course about image recognition and detection, \
+        however, even the Course Professor admitted that course was out of date and new developments that were not really being taught in the course\
+        so I can't say much. Everything else was interesting as a course."}
       sx={{
         
       }}>
