@@ -309,17 +309,29 @@ export default function blog() {
       title={"Winter 2024"} 
       text={"My final semester, which also was overwhelming. Due to scheduling issues, which MacEwan due its smaller size had a lot of. \
         I had four courses and one capstone project. One Course was Computer Vision, a course about image recognition and detection, \
-        however, even the Course Professor admitted that course was out of date and new developments that were not really being taught in the course\
-        so I can't say much. Everything else was interesting as a course."}
+        however, the course was out of date and even the Professor admitted as such, new developments that were not being taught in the course for some reason\
+        so I can't say much about it. Everything else was interesting as a course/project."}
       sx={{
         
       }}>
       <Typography sx={{
         mt: 2, 
         width: "50%",
-        
+        fontSize: 19
       }}>
-        
+        Computer Systems Security was the other hand of security, it was all about the defenses and vulnerabilities of the
+        local machine. 
+        <br></br><br></br>
+        What was NOT better about the course was the project. The idea was the exact same as before, work with a real company
+        to improve cybersecurity. This issue was the company who were where working with, as well as some other companies for
+        a few other groups, had absolutely no idea what we were about. As in, they wanted us to work on their frontend visual design, 
+        for a cybersecurity course. When our professor pressed them on cybersecurity they basically just stopped messaging. Other groups got 
+        ghosted as well. The out prof stated that the company may have been a scam company trying to get as much government grants as 
+        possible, as they had around 20 employees and over 100 students working for them, which to put it mildly, is just now how f**king
+        companies work.
+        <br></br><br></br>
+        Web Application Development was the course that was the most immediately practical to my first work. As even, with increasing amounts
+        of web dev done by AI this is one of the largest field of computer science.
       </Typography>
       </BlogEntryAllText>
 
