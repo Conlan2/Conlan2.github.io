@@ -5,9 +5,10 @@ import { ThemeProvider } from '@mui/material/styles'
 import "./globals.css";
 import roboto from "@/src/mui/fonts/roboto";
 import primaryTheme from "@/src/mui/themes/primary";
-import NavigationBar from "@/src/components/NavigationBar";
+import NavigationBar from "@/src/components/layout/NavigationBar";
 import Box from "@mui/material/Box";
 import Script from "next/script";
+import { CssBaseline } from "@mui/material";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,9 +39,11 @@ export default function RootLayout({
           strategy="afterInteractive" 
           />
           <ThemeProvider theme={primaryTheme}>
+            <CssBaseline />
             <AppRouterCacheProvider>
               <NavigationBar/>
               <Box sx={{width:"100%", display:"flex", flexGrow:1}}>
+                
                 {children}
               </Box>
             </AppRouterCacheProvider>

@@ -2,7 +2,7 @@
 import { alpha, Button, Stack, Typography } from "@mui/material";
 import Box from "@mui/material/Box";
 import Image from 'next/image';
-import primaryTheme from "../mui/themes/primary";
+import primaryTheme from "../../mui/themes/primary";
 import Link from "next/link";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';

@@ -1,7 +1,6 @@
 import { alpha, AppBar, Toolbar, Typography } from '@mui/material';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
-import primaryTheme from "../mui/themes/primary";
 import Link from 'next/link'
 
 
@@ -19,29 +18,35 @@ export default function NavigationBar() {
                 <Box sx={{flexGrow: 1}}></Box>
                 <Box display="flex" justifyContent="space-between">
                     <Button>
-                        <Link href='#PersonalSection'>
+                        <Link href='/#PersonalSection'>
                         Home
                         </Link>
                     </Button>
                     <Button>
-                        <Link href='#AboutMeSection'>
+                        <Link href='/#AboutMeSection'>
                         About
                         </Link>
                         
                     </Button>
                     <Button>
-                        <Link href='#SkillsAndExpertise'>
+                        <Link href='/#SkillsAndExpertise'>
                         Skills
                         </Link>
                     </Button>
                     <Button>
-                        <Link href='#FeaturedProjectsSection'>
+                        <Link href='/#FeaturedProjectsSection'>
                         Projects
                         </Link>
                         
                     </Button>
                     <Button>
-                        <Link href='#ContactsSection'>
+                        <Link href='/Blog'>
+                        Blog
+                        </Link>
+                        
+                    </Button>
+                    <Button>
+                        <Link href='/#ContactsSection'>
                         Contacts
                         </Link>
 
