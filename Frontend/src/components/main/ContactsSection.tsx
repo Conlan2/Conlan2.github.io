@@ -5,8 +5,9 @@ import EmailIcon from '@mui/icons-material/Email';
 import { ReactNode, useState } from "react";
 import SmartphoneIcon from '@mui/icons-material/Smartphone';
 import LocationOnIcon from '@mui/icons-material/LocationOn';
-import primaryTheme from "../mui/themes/primary";
+import primaryTheme from "../../mui/themes/primary";
 import Snackbar from '@mui/material/Snackbar';
+import Botpoison from "@botpoison/browser";
 
 interface contactInfoProps {
     type: String
@@ -14,6 +15,23 @@ interface contactInfoProps {
     clipBoard: string
     children: ReactNode 
 }
+
+const botpoison = new Botpoison({ publicKey: "pk_93bcb855-a614-42ae-a129-87e2bed1227b" });
+const handleSubmit = async () => {
+
+  const { solution } = await botpoison.challenge();
+
+  const formData = {
+    _botpoison: solution 
+  };
+
+  await fetch("https://submit-form.com/Kgqy1fgdA", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(formData),
+  });
+};
+
 function ContactInfo({type, detail, clipBoard, children}: contactInfoProps){
     var [notificationState, setNotificationState] = useState(false)
 
@@ -192,7 +210,8 @@ export default function ContactsSection() {
                                 boxShadow: `0px 0px 20px 5px ${alpha(primaryTheme.palette.secondary.main, 1)}`
                             }
                         }}
-                        type="submit">Submit</Button> 
+                        type="submit"
+                        onClick={handleSubmit}>Submit</Button> 
                         </Box>
                         
                     </Form>
