@@ -356,6 +356,22 @@ export default function blog() {
       </Typography>
       </BlogEntryAllText>
 
+        <BlogEntryAllText 
+      title={"My First Job (July-August 2025)"} 
+      text={""}
+      sx={{
+     
+        bgcolor:"background.paper",
+      
+      }}>
+      <Typography sx={{
+        mt: 2, 
+        width: "50%",
+        fontSize: 19
+      }}>
+        
+      </Typography>
+      </BlogEntryAllText>
 
 
       <Footer></Footer>
