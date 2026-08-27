@@ -25,11 +25,11 @@ const handleSubmit = async () => {
     _botpoison: solution 
   };
 
-  await fetch("https://submit-form.com/Kgqy1fgdA", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify(formData),
-  });
+//   await fetch("https://submit-form.com/Kgqy1fgdA", {
+//     method: "POST",
+//     headers: { "Content-Type": "application/json" },
+//     body: JSON.stringify(formData),
+//   });
 };
 
 function ContactInfo({type, detail, clipBoard, children}: contactInfoProps){

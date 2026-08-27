@@ -356,22 +356,19 @@ export default function blog() {
       </Typography>
       </BlogEntryAllText>
 
-        <BlogEntryAllText 
-      title={"My First Job (July-August 2025)"} 
-      text={""}
+           <BlogEntryAllText 
+      title={"Trek Alberta Job"} 
+      text={"My final semester, which also was overwhelming. Due to scheduling issues, which MacEwan due its smaller size had a lot of. \
+        I had four courses and one capstone project. One Course was Computer Vision, a course about image recognition and detection, \
+        however, the course was out of date and even the Professor admitted as such, new developments that were not being taught in the course for some reason\
+        so I can't say much about it. Everything else was interesting as a course/project."}
       sx={{
-     
-        bgcolor:"background.paper",
-      
-      }}>
-      <Typography sx={{
-        mt: 2, 
-        width: "50%",
-        fontSize: 19
-      }}>
         
-      </Typography>
+      }}>
+
       </BlogEntryAllText>
+
+
 
 
       <Footer></Footer>
