@@ -39,12 +39,12 @@ export default function NavigationBar() {
                         </Link>
                         
                     </Button>
-                    <Button>
+                    {/* <Button>
                         <Link href='/Blog'>
                         Blog
                         </Link>
                         
-                    </Button>
+                    </Button> */}
                     <Button>
                         <Link href='/#ContactsSection'>
                         Contacts
